@@ -7,7 +7,7 @@
 @section('seccion')
 
     <h3>Detalle</h3>
-
+    
     <p>Id                  : {{ $xDetAlumnos -> id }} </p>
     <p>Codigo              : {{ $xDetAlumnos -> codEst }} </p>
     <p>Apellidos y Nombres : {{ $xDetAlumnos -> apeEst }}, {{ $xDetAlumnos -> nomEst }} </p>
