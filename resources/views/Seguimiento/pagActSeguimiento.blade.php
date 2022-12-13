@@ -18,52 +18,10 @@
         @method('PUT')    
         @csrf
 
-        @if($errors->has('idEst'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                El <strong>codigo</strong> es requerido
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
-        @if($errors->has('traAct'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                El <strong>trabajo actual</strong> es requerido
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
-        @if($errors->has('ofiAct'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                El <strong>oficio actual</strong> es requerido
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
-        @if($errors->has('satEst'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                La <strong>satisfaccion</strong> es requerida
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
-        @if($errors->has('fecSeg'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                La <strong>fecha</strong> es requerida
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
-        @if($errors->has('estSeg'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                El <strong>estado</strong> es requerido
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
-            </div>
-        @endif
-
         <input type="text" name="idEst" placeholder="ID" value="{{ $xActSeguimiento->idEst }}" class="form-control mb-2">    
         
         <select name="traAct" class="form-control mb-2">
-            <option value="">Trabajo Actual</option>
+            <option value="">Seleccione Trabajo Actual...</option>
             <option value="SI" @if ($xActSeguimiento->traAct =="si") {{ "SELECTED" }} @endif >SI</option>
             <option value="NO" @if ($xActSeguimiento->traAct =="no") {{ "SELECTED" }} @endif >NO</option>
         </select>        
@@ -82,6 +40,6 @@
 
         <input type="text" name="estSeg" placeholder="Estado de seguimiento" value="{{ $xActSeguimiento->estSeg }}" class="form-control mb-2">
 
-        <button class="btn btn-warning" type="submit">Actualizar</button>
+        <button class="btn btn-warning" type="submit">ACTUALIZAR</button>
     </form>
 @endsection    

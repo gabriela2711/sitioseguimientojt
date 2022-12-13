@@ -15,42 +15,42 @@
         @csrf
 
         @if($errors->has('idEst'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 El <strong>codigo</strong> es requerido
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
         @endif
 
         @if($errors->has('traAct'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 El <strong>trabajo actual</strong> es requerido
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
         @endif
 
         @if($errors->has('ofiAct'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 El <strong>oficio actual</strong> es requerido
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
         @endif
 
         @if($errors->has('satEst'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 La <strong>satisfaccion</strong> es requerida
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
         @endif
 
         @if($errors->has('fecSeg'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 La <strong>fecha</strong> es requerida
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
         @endif
 
         @if($errors->has('estSeg'))
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 El <strong>estado</strong> es requerido
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>    
             </div>
@@ -59,7 +59,7 @@
         <input type="text" name="idEst" placeholder="ID" value="{{ old('idEst')}}" class="form-control mb-2">    
         
         <select name="traAct" class="form-control mb-2">
-            <option value="">Trabajo Actual</option>
+            <option value="">. . .Seleccione Trabajo Actual. . .</option>
             <option value="SI">SI</option>
             <option value="NO">NO</option>
         </select>        
@@ -67,7 +67,7 @@
         <input type="text" name="ofiAct" placeholder="Oficio Actual" value="{{ old('ofiAct')}}" class="form-control mb-2">
 
         <select name="satEst" class="form-control mb-2">
-            <option value="">Satisfacción estudiantil</option>
+            <option value="">. . .Seleccione Satisfacción estudiantil. . .</option>
             <option value="0-No esta satisfecho">0-No esta satisfecho</option>
             <option value="1-Regular">1-Regular</option>
             <option value="2-Bueno">2-Bueno</option>
@@ -78,7 +78,7 @@
 
         <input type="text" name="estSeg" placeholder="Estado de seguimiento" value="{{ old('estSeg')}}" class="form-control mb-2">
 
-        <button class="btn btn-primary" type="submit">Agregar</button>
+        <button class="btn btn-success" type="submit">AGREGAR</button>
     </form>
 
     <hr>
@@ -117,7 +117,7 @@
                 </form>   
 
                 <a class="btn btn-warning btn-sm" href="{{ route('Seguimiento.xActualizarseg', $item->id) }}">
-                ...A
+                A
                 </a>
             </td>
         </tr>

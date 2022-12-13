@@ -13,10 +13,10 @@
   <body>
 
   <div class="container my-5">
-    <a href="{{ route('xIndex') }}" class="btn btn-primary">Inicio</a>
-    <a href="{{ route('xGaleria') }}" class="btn btn-primary">Galeria</a>
-    <a href="{{ route('xLista') }}"class="btn btn-primary">Lista</a>
-    <a href="{{ route('xSeguimiento') }}"class="btn btn-primary">Seguimiento</a>
+    <a href="{{ route('xIndex') }}" class="btn btn-success">Inicio</a>
+    <a href="{{ route('xGaleria') }}" class="btn btn-success">Galeria</a>
+    <a href="{{ route('xLista') }}"class="btn btn-success">Lista</a>
+    <a href="{{ route('xSeguimiento') }}"class="btn btn-success">Seguimiento</a>
 
     
   </div>
